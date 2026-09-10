@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ROI ARKAN — Signaler un abus WhatsApp</title>
+<style>
+:root{--bg:#020b14;--panel:#071b2b;--line:#0c86ba;--cyan:#16dcff;--text:#f5fbff;--muted:#a8c7d9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 75% 20%,#07355b 0,#020b14 42%,#01070d 100%);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(rgba(22,220,255,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(22,220,255,.12) 1px,transparent 1px);background-size:60px 60px}
+a{text-decoration:none;color:inherit}.wrap{max-width:1200px;margin:auto;padding:0 28px}
+nav{height:72px;border-bottom:1px solid #16405a;background:rgba(1,9,17,.72);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
+.logo{font-weight:900;letter-spacing:4px;font-size:27px;line-height:.8}.logo span{color:var(--cyan)}.logo small{display:block;color:var(--cyan);font-size:11px;letter-spacing:4px;margin-top:7px}
+.links{display:flex;gap:36px;font-size:14px}.links a:first-child{color:var(--cyan)}
+.hero{min-height:500px;display:grid;grid-template-columns:1fr 1.12fr;align-items:center;overflow:hidden}
+.eyebrow{display:inline-block;border:1px solid #087da9;border-radius:22px;padding:8px 16px;color:var(--cyan);font-size:11px;letter-spacing:2px}
+h1{font-size:56px;line-height:1.02;margin:22px 0 16px;max-width:650px}h1 span{color:var(--cyan)}
+.lead{color:#c3d8e5;font-size:18px;line-height:1.55;max-width:620px}
+.features{display:flex;gap:34px;margin:34px 0}.feat{display:flex;gap:10px;max-width:180px}.ico{font-size:27px;color:var(--cyan)}.feat b{display:block;margin-bottom:6px}.feat small{color:var(--muted);line-height:1.4}
+.cta{display:inline-flex;border:1px solid var(--cyan);box-shadow:0 0 18px #00d9ff33;border-radius:25px;padding:12px 24px;color:var(--cyan);font-weight:700;letter-spacing:1px}
+.hero-art{height:500px;position:relative;display:flex;align-items:center;justify-content:center}
+.globe{position:absolute;width:560px;height:560px;border-radius:50%;border:1px solid #09bde955;box-shadow:0 0 70px #008cff33,inset 0 0 60px #00d9ff22;background:repeating-radial-gradient(circle,#0a6eaa11 0 2px,transparent 3px 45px)}
+.globe:before,.globe:after{content:"";position:absolute;inset:12%;border:1px solid #19dfff55;border-radius:50%}.globe:after{transform:rotate(65deg) scaleY(.45)}
+.person{position:relative;width:330px;height:430px;margin-top:60px;background:linear-gradient(150deg,#0b2337,#01080f 65%);clip-path:polygon(46% 0,73% 10%,92% 31%,100% 100%,18% 100%,25% 35%);filter:drop-shadow(0 0 35px #008dff66)}
+.phone{position:absolute;right:80px;top:150px;width:175px;height:290px;border:5px solid #09141c;border-radius:24px;transform:rotate(5deg);background:#051421;box-shadow:0 0 30px #00eaff99}.wa{font-size:72px;position:absolute;left:44px;top:75px;color:#20e86b;text-shadow:0 0 25px #20e86b}.lock{position:absolute;left:25px;bottom:15px;width:125px;height:110px;border:4px solid var(--cyan);border-radius:16px;box-shadow:0 0 20px #00eaff99;font-size:55px;text-align:center;padding-top:18px;background:#021321dd}
+.sidewords{position:absolute;right:5px;top:105px;color:var(--cyan);letter-spacing:5px;line-height:2.1;font-weight:700;font-size:16px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:10px 0 20px}.card,.form,.support{background:linear-gradient(145deg,#082238dd,#04131fdd);border:1px solid #116b96;border-radius:17px;box-shadow:0 0 25px #002d4733}
+.card{padding:28px;display:flex;gap:18px;min-height:125px}.card .big{font-size:40px;color:var(--cyan)}.card h3{margin:2px 0 10px}.card p{margin:0;color:var(--muted);line-height:1.5;font-size:13px}
+.form{padding:30px;margin:20px 0}.formhead{display:flex;gap:18px;align-items:center;border-bottom:1px solid #16405a;padding-bottom:18px;margin-bottom:20px}.formhead .big{font-size:38px;color:var(--cyan)}.formhead h2{margin:0;font-size:25px}.formhead p{margin:7px 0 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field label{display:block;font-size:13px;font-weight:700;color:#c9e5f2;margin:0 0 8px}.field input,.field select,.field textarea{width:100%;background:#061a2a;border:1px solid #166a91;color:white;border-radius:10px;padding:14px;font:inherit;outline:none}.field textarea{min-height:120px;resize:vertical}.full{grid-column:1/-1}.upload{border:1px dashed var(--cyan);min-height:120px;border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;color:#b8d5e3;cursor:pointer}.check{margin:18px 0;color:#aac8d7;font-size:13px}.send{width:100%;border:0;border-radius:13px;padding:16px;background:var(--cyan);color:#00131d;font-size:16px;font-weight:900;cursor:pointer;box-shadow:0 0 25px #00ddff66}.note{margin-top:18px;padding:15px;border:1px solid #166a91;border-radius:12px;color:#9fc3d4;font-size:12px;line-height:1.5}
+.support{padding:28px;margin-bottom:30px}.support h2{margin:0 0 8px}.support p{color:var(--muted)}.supportlinks{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.supportlinks a{border:1px solid #159bd0;border-radius:12px;padding:16px;text-align:center;color:var(--cyan);font-weight:700}
+footer{border-top:1px solid #16405a;padding:30px 0;color:#89afc2}.foot{display:flex;justify-content:space-between;align-items:center}.foot .logo{font-size:22px}
+@media(max-width:850px){.links{gap:12px}.hero{grid-template-columns:1fr}.hero-art{order:-1;height:360px}.sidewords{display:none}h1{font-size:43px}.features{flex-wrap:wrap}.cards,.supportlinks{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.full{grid-column:auto}.wrap{padding:0 16px}.phone{right:8%}}
+</style>
+</head>
+<body>
+<nav><div class="wrap" style="width:100%;display:flex;justify-content:space-between;align-items:center">
+<div class="logo">ROI <span>ARKAN</span><small>REPORT — VOL. 2</small></div>
+<div class="links"><a href="#">⌂ Accueil</a><a href="#about">À propos</a><a href="#contact">Contact</a><a href="#">◐</a></div>
+</div></nav>
+
+<main class="wrap">
+<section class="hero" id="about">
+<div>
+<div class="eyebrow">SÉCURITÉ • JUSTICE • COMMUNAUTÉ</div>
+<h1>Signaler un abus<br>sur <span>WhatsApp</span></h1>
+<p class="lead">Une plateforme moderne destinée à recueillir des signalements concernant des activités suspectes, frauduleuses ou abusives sur WhatsApp.</p>
+<div class="features">
+<div class="feat"><div class="ico">🛡</div><div><b>Sécurisé</b><small>Vos informations sont protégées</small></div></div>
+<div class="feat"><div class="ico">👥</div><div><b>Vérification</b><small>Examen par une équipe humaine</small></div></div>
+<div class="feat"><div class="ico">▥</div><div><b>Impact</b><small>Pour un espace digital plus sûr</small></div></div>
+</div>
+<a class="cta" href="#report">🛡 &nbsp; ENSEMBLE POUR UN WHATSAPP PLUS SÛR</a>
+</div>
+<div class="hero-art"><div class="globe"></div><div class="person"></div><div class="phone"><div class="wa">◉</div><div class="lock">🔒</div></div><div class="sidewords">DÉTECTER<br>SIGNALER<br>PROTÉGER</div></div>
+</section>
+
+<section class="cards">
+<div class="card"><div class="big">🛡</div><div><h3>Signalement sécurisé</h3><p>Décrivez précisément le problème et fournissez les informations utiles.</p></div></div>
+<div class="card"><div class="big">⌕</div><div><h3>Vérification</h3><p>Les informations peuvent être examinées avant toute action.</p></div></div>
+<div class="card"><div class="big">▤</div><div><h3>Preuves</h3><p>Ajoutez des captures d'écran ou autres éléments pertinents.</p></div></div>
+</section>
+
+<section class="form" id="report">
+<div class="formhead"><div class="big">🖉</div><div><h2>Nouveau signalement</h2><p>Remplissez le formulaire avec des informations exactes.</p></div><div style="margin-left:auto;color:#9fc3d4;font-size:12px">🔒 Vos données sont confidentielles.</div></div>
+<form onsubmit="sendReport(event)">
+<div class="grid">
+<div class="field"><label>Numéro WhatsApp concerné</label><input type="tel" placeholder="+509 XX XX XX XX" required></div>
+<div class="field"><label>Type de problème</label><select required><option value="">Sélectionnez une catégorie</option><option>Fraude</option><option>Arnaque</option><option>Usurpation</option><option>Spam</option><option>Autre abus</option></select></div>
+<div class="field"><label>Adresse e-mail</label><input type="email" placeholder="votre@email.com" required></div>
+<div class="field"><label>Expliquez l'activité du compte</label><textarea placeholder="Expliquez clairement ce que ce compte fait, comment vous avez été contacté et pourquoi vous pensez que cette activité est abusive..." required></textarea></div>
+<div class="field"><label>Preuve / capture d'écran</label><label class="upload"><input id="proof" type="file" accept="image/png,image/jpeg" hidden>☁<br>Cliquez pour ajouter une image<br>(PNG, JPG, JPEG)</label></div>
+<div class="full check"><label><input type="checkbox" required> Je confirme que les informations fournies sont exactes et que je ne fais pas de faux signalement.</label></div>
+<div class="full"><button class="send">➤ &nbsp; ENVOYER LE SIGNALEMENT</button></div>
+</div>
+<div class="note">ⓘ Ce formulaire prépare un signalement pour vérification. ROI ARKAN ne garantit pas qu'un compte sera suspendu. Les décisions concernant les comptes WhatsApp appartiennent à WhatsApp après examen de ses propres règles et procédures.</div>
+</form>
+</section>
+
+<section class="support" id="contact">
+<h2>🎧 &nbsp; Support officiel WhatsApp</h2><p>Pour contacter WhatsApp ou effectuer un signalement directement, utilisez uniquement les canaux officiels.</p>
+<div class="supportlinks"><a href="https://faq.whatsapp.com/" target="_blank">Centre d'aide WhatsApp ↗</a><a href="https://www.whatsapp.com/contact/" target="_blank">Signaler et bloquer ↗</a><a href="https://www.whatsapp.com/contact/" target="_blank">Contacter l'assistance ↗</a></div>
+</section>
+</main>
+
+<footer><div class="wrap foot"><div class="logo">ROI <span>ARKAN</span><small>REPORT — VOL. 2</small></div><div>Sécurité　•　Responsabilité　•　Communauté</div><div>© 2026 ROI ARKAN REPORT — VOL. 2<br>Tous droits réservés.</div></div></footer>
+<script>
+function sendReport(e){e.preventDefault();alert("Votre signalement est prêt à être transmis pour vérification.");}
+document.getElementById("proof").addEventListener("change",function(){if(this.files[0]) this.parentElement.innerHTML="✓ "+this.files[0].name+"<input id='proof' type='file' accept='image/png,image/jpeg' hidden>";});
+</script>
+</body>
+</html>
